@@ -1,91 +1,45 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="content">
+      <div className="hero h-screen">
+        <div className="hero-content text-center">
+          <div className="max-w-full">
+            <p className="text-3xl py-6 font-semibold">
+              Hello, my name is Reza Febriansyah 👋
+            </p>
+            <h1 className="lg:text-7xl text-5xl font-bold lg:leading-snug">
+              FRONTEND DEVELOPER <br /> UI UX DESIGNER
+            </h1>
+            <p className="m-auto w-9/12 py-6 mb-5 text-2xl">
+              I&apos;m a Developer and Designer too with specializing building
+              web apps exceptional best experience. Currently, i&apos;m focused
+              on Frontend & UI UX job in 2 companies.
+            </p>
+            <div className="flex justify-center items-center gap-x-3">
+              <div className="w-auto bg-base-300 rounded-3xl px-2 py-4">
+                <a className="text-base-content hover:text-primary">
+                  <i className="bx bx-fw bx-md bxl-github"></i>
+                </a>
+              </div>
+              <div className="w-auto bg-base-300 rounded-3xl px-2 py-4">
+                <a className="text-base-content hover:text-primary">
+                  <i className="bx bx-fw bx-md bxl-instagram"></i>
+                </a>
+              </div>
+              <div className="w-auto bg-base-300 rounded-3xl px-2 py-4">
+                <a className="text-base-content hover:text-primary">
+                  <i className="bx bx-fw bx-md bxl-medium"></i>
+                </a>
+              </div>
+              <div className="w-auto bg-base-300 rounded-3xl px-2 py-4">
+                <a className="text-base-content hover:text-primary">
+                  <i className="bx bx-fw bx-md bxl-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
